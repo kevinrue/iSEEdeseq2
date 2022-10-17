@@ -1,42 +1,42 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# MyBioconductorPackage
+# iSEEdeseq2
 
 <!-- badges: start -->
 
 [![GitHub
-issues](https://img.shields.io/github/issues/kevinrue/MyBioconductorPackage)](https://github.com/kevinrue/MyBioconductorPackage/issues)
+issues](https://img.shields.io/github/issues/kevinrue/iSEEdeseq2)](https://github.com/kevinrue/iSEEdeseq2/issues)
 [![GitHub
-pulls](https://img.shields.io/github/issues-pr/kevinrue/MyBioconductorPackage)](https://github.com/kevinrue/MyBioconductorPackage/pulls)
+pulls](https://img.shields.io/github/issues-pr/kevinrue/iSEEdeseq2)](https://github.com/kevinrue/iSEEdeseq2/pulls)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check-bioc](https://github.com/kevinrue/MyBioconductorPackage/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/kevinrue/MyBioconductorPackage/actions)
+[![R-CMD-check-bioc](https://github.com/kevinrue/iSEEdeseq2/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/kevinrue/iSEEdeseq2/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/kevinrue/MyBioconductorPackage/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kevinrue/MyBioconductorPackage?branch=main)
+coverage](https://codecov.io/gh/kevinrue/iSEEdeseq2/branch/main/graph/badge.svg)](https://app.codecov.io/gh/kevinrue/iSEEdeseq2?branch=main)
 <!-- badges: end -->
 
-The goal of `MyBioconductorPackage` is to …
+The goal of `iSEEdeseq2` is to …
 
 ## Installation instructions
 
 Get the latest stable `R` release from
-[CRAN](http://cran.r-project.org/). Then install `MyBioconductorPackage`
-from [Bioconductor](http://bioconductor.org/) using the following code:
+[CRAN](http://cran.r-project.org/). Then install `iSEEdeseq2` from
+[Bioconductor](http://bioconductor.org/) using the following code:
 
 ``` r
 if (!requireNamespace("BiocManager", quietly = TRUE)) {
     install.packages("BiocManager")
 }
 
-BiocManager::install("MyBioconductorPackage")
+BiocManager::install("iSEEdeseq2")
 ```
 
 And the development version from
-[GitHub](https://github.com/kevinrue/MyBioconductorPackage) with:
+[GitHub](https://github.com/kevinrue/iSEEdeseq2) with:
 
 ``` r
-BiocManager::install("kevinrue/MyBioconductorPackage")
+BiocManager::install("kevinrue/iSEEdeseq2")
 ```
 
 ## Example
@@ -44,85 +44,42 @@ BiocManager::install("kevinrue/MyBioconductorPackage")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library("MyBioconductorPackage")
+library("iSEEdeseq2")
 ## basic example code
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub!
-
 ## Citation
 
-Below is the citation output from using
-`citation('MyBioconductorPackage')` in R. Please run this yourself to
-check for any updates on how to cite **MyBioconductorPackage**.
+Below is the citation output from using `citation('iSEEdeseq2')` in R.
+Please run this yourself to check for any updates on how to cite
+**iSEEdeseq2**.
 
 ``` r
-print(citation('MyBioconductorPackage'), bibtex = TRUE)
+print(citation('iSEEdeseq2'), bibtex = TRUE)
 #> 
-#> kevinrue (2022). _Demonstration of a Bioconductor Package_. doi:
-#> 10.18129/B9.bioc.MyBioconductorPackage (URL:
-#> https://doi.org/10.18129/B9.bioc.MyBioconductorPackage),
-#> https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage
-#> - R package version 0.99.0, <URL:
-#> http://www.bioconductor.org/packages/MyBioconductorPackage>.
+#> To cite package 'iSEEdeseq2' in publications use:
+#> 
+#>   Kevin Rue-Albrecht (2022). iSEEdeseq2: iSEE Panels for DESeq2. R
+#>   package version 0.99.0. https://github.com/kevinrue/iSEEdeseq2
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
-#>     title = {Demonstration of a Bioconductor Package},
-#>     author = {{kevinrue}},
+#>     title = {iSEEdeseq2: iSEE Panels for DESeq2},
+#>     author = {Kevin Rue-Albrecht},
 #>     year = {2022},
-#>     url = {http://www.bioconductor.org/packages/MyBioconductorPackage},
-#>     note = {https://github.com/kevinrue/MyBioconductorPackage/MyBioconductorPackage - R package version 0.99.0},
-#>     doi = {10.18129/B9.bioc.MyBioconductorPackage},
-#>   }
-#> 
-#> kevinrue (2022). "Demonstration of a Bioconductor Package." _bioRxiv_.
-#> doi: 10.1101/TODO (URL: https://doi.org/10.1101/TODO), <URL:
-#> https://www.biorxiv.org/content/10.1101/TODO>.
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Article{,
-#>     title = {Demonstration of a Bioconductor Package},
-#>     author = {{kevinrue}},
-#>     year = {2022},
-#>     journal = {bioRxiv},
-#>     doi = {10.1101/TODO},
-#>     url = {https://www.biorxiv.org/content/10.1101/TODO},
+#>     note = {R package version 0.99.0},
+#>     url = {https://github.com/kevinrue/iSEEdeseq2},
 #>   }
 ```
 
-Please note that the `MyBioconductorPackage` was only made possible
-thanks to many other R and bioinformatics software authors, which are
-cited either in the vignettes and/or the paper(s) describing this
-package.
+Please note that the `iSEEdeseq2` was only made possible thanks to many
+other R and bioinformatics software authors, which are cited either in
+the vignettes and/or the paper(s) describing this package.
 
 ## Code of Conduct
 
-Please note that the `MyBioconductorPackage` project is released with a
+Please note that the `iSEEdeseq2` project is released with a
 [Contributor Code of
 Conduct](http://bioconductor.org/about/code-of-conduct/). By
 contributing to this project, you agree to abide by its terms.
@@ -136,12 +93,11 @@ contributing to this project, you agree to abide by its terms.
     *[rcmdcheck](https://CRAN.R-project.org/package=rcmdcheck)*
     customized to use [Bioconductor’s docker
     containers](https://www.bioconductor.org/help/docker/) and
-    *[BiocCheck](https://bioconductor.org/packages/3.14/BiocCheck)*.
+    *[BiocCheck](https://bioconductor.org/packages/3.16/BiocCheck)*.
 -   Code coverage assessment is possible thanks to
     [codecov](https://codecov.io/gh) and
     *[covr](https://CRAN.R-project.org/package=covr)*.
--   The [documentation
-    website](http://kevinrue.github.io/MyBioconductorPackage) is
+-   The [documentation website](http://kevinrue.github.io/iSEEdeseq2) is
     automatically updated thanks to
     *[pkgdown](https://CRAN.R-project.org/package=pkgdown)*.
 -   The code is styled automatically thanks to
@@ -153,11 +109,10 @@ contributing to this project, you agree to abide by its terms.
 For more details, check the `dev` directory.
 
 This package was developed using
-*[biocthis](https://bioconductor.org/packages/3.14/biocthis)*.
+*[biocthis](https://bioconductor.org/packages/3.16/biocthis)*.
 
 ## Code of Conduct
 
-Please note that the MyBioconductorPackage project is released with a
-[Contributor Code of
-Conduct](http://bioconductor.org/about/code-of-conduct/). By
+Please note that the iSEEdeseq2 project is released with a [Contributor
+Code of Conduct](http://bioconductor.org/about/code-of-conduct/). By
 contributing to this project, you agree to abide by its terms.
